@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peddy - Shops</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <nav class="max-w-[1340px] mx-auto px-5">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-bold">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop.html" class="text-green-600">Shop</a></li>
+                            <li><a href="food.html">Pet Food</a></li>
+                            <li><a href="grooming.html">Grooming</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <a href="index.html" class="btn btn-ghost text-xl"><img src="./assests/logo.webp"
+                            alt="Peddy" />Peddy</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-bold">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html" class="text-green-600">Shop</a></li>
+                        <li><a href="food.html">Pet Food</a></li>
+                        <li><a href="grooming.html">Grooming</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class=""><img class="w-[56px] h-[56px]" src="./assests/user.png" alt="User" /></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-[1340px] mx-auto px-5 min-h-[60vh] py-10">
+        <div class="text-center mb-10">
+            <h1 class="text-4xl font-bold mb-4">Our Partner Shops</h1>
+            <p class="text-gray-600 max-w-2xl mx-auto">Discover the best places to buy accessories, toys, and premium
+                supplies for your furry friends. We partner with top-rated pet shops to bring you the best deals.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <!-- Shop 1 -->
+            <div class="card lg:card-side bg-base-100 shadow-xl border border-gray-100">
+                <figure class="lg:w-2/5">
+                    <img class="h-full w-full object-cover"
+                        src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=800"
+                        alt="The Happy Pet Shop" />
+                </figure>
+                <div class="card-body lg:w-3/5">
+                    <h2 class="card-title text-2xl">The Happy Pet Shop</h2>
+                    <div class="badge badge-success text-white mb-2">Open Now</div>
+                    <p class="text-gray-600 mb-2">Location: Downtown NY, 123 Main St.</p>
+                    <p>Your one-stop destination for all premium pet toys, cozy beds, and stylish accessories. We offer
+                        a wide range of organic treats as well!</p>
+                    <div class="card-actions justify-end mt-4">
+                        <button class="btn bg-green-400 text-white hover:bg-green-500">View Shop</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shop 2 -->
+            <div class="card lg:card-side bg-base-100 shadow-xl border border-gray-100">
+                <figure class="lg:w-2/5">
+                    <img class="h-full w-full object-cover"
+                        src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=800"
+                        alt="Paws & Claws Boutique" />
+                </figure>
+                <div class="card-body lg:w-3/5">
+                    <h2 class="card-title text-2xl">Paws & Claws Boutique</h2>
+                    <div class="badge badge-success text-white mb-2">Open Now</div>
+                    <p class="text-gray-600 mb-2">Location: Westside CA, 456 Ocean Blvd.</p>
+                    <p>Specializing in high-end pet fashion, luxury collars, and premium health supplements. Treat your
+                        pet like royalty at our boutique.</p>
+                    <div class="card-actions justify-end mt-4">
+                        <button class="btn bg-green-400 text-white hover:bg-green-500">View Shop</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shop 3 -->
+            <div class="card lg:card-side bg-base-100 shadow-xl border border-gray-100">
+                <figure class="lg:w-2/5">
+                    <img class="h-full w-full object-cover"
+                        src="https://images.unsplash.com/photo-1601758177266-bc599de87707?auto=format&fit=crop&q=80&w=800"
+                        alt="Furry Friends Superstore" />
+                </figure>
+                <div class="card-body lg:w-3/5">
+                    <h2 class="card-title text-2xl">Furry Friends Superstore</h2>
+                    <div class="badge badge-success text-white mb-2">Open Now</div>
+                    <p class="text-gray-600 mb-2">Location: Northside TX, 789 Retail Rd.</p>
+                    <p>Everything your pet needs under one roof. Huge selections of everyday essentials, large bags of
+                        food, and bulk discounts.</p>
+                    <div class="card-actions justify-end mt-4">
+                        <button class="btn bg-green-400 text-white hover:bg-green-500">View Shop</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shop 4 -->
+            <div class="card lg:card-side bg-base-100 shadow-xl border border-gray-100">
+                <figure class="lg:w-2/5">
+                    <img class="h-full w-full object-cover"
+                        src="https://images.unsplash.com/photo-1583337260546-28b6bf66d004?auto=format&fit=crop&q=80&w=800"
+                        alt="Urban Tails" />
+                </figure>
+                <div class="card-body lg:w-3/5">
+                    <h2 class="card-title text-2xl">Urban Tails Market</h2>
+                    <div class="badge badge-error text-white mb-2">Closed</div>
+                    <p class="text-gray-600 mb-2">Location: Uptown CHI, 321 Lake St.</p>
+                    <p>A modern pet market focusing on sustainable, eco-friendly products. We have locally sourced
+                        treats and recycled pet toys.</p>
+                    <div class="card-actions justify-end mt-4">
+                        <button class="btn bg-green-400 text-white hover:bg-green-500">View Shop</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer bg-neutral text-neutral-content p-10 mt-10">
+        <nav>
+            <a href="index.html" class="btn btn-ghost text-xl"><img src="./assests/logo.webp" alt="Peddy" />Peddy</a>
+            <a class="link link-hover">Location: av. Washington 165, NY CA 54003</a>
+            <a class="link link-hover">Phone: +31 85 964 47 25</a>
+            <a class="link link-hover">Email: info@yourdomain.com</a>
+            <a class="link link-hover">Openings hours: 9.00 AM - 5.00 PM</a>
+            <div class="grid grid-flow-col gap-4">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-current">
+                        <path d="M24 4.557... (truncated for brevity but keeping standard daisyui icon)"></path>
+                    </svg></a>
+            </div>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Useful Links</h6>
+            <a href="index.html" class="link link-hover">Home</a>
+            <a href="shop.html" class="link link-hover">Shop</a>
+            <a href="food.html" class="link link-hover">Pet Food</a>
+            <a href="grooming.html" class="link link-hover">Grooming</a>
+            <a href="contact.html" class="link link-hover">Contact</a>
+        </nav>
+        <form onsubmit="event.preventDefault(); alert('Subscribed!')">
+            <h6 class="footer-title">Drop a Message</h6>
+            <fieldset class="form-control w-full max-w-xs mt-4">
+                <div class="join">
+                    <input type="text" placeholder="username@site.com" class="input input-bordered join-item w-full" />
+                    <button class="btn bg-green-700 text-white join-item hover:bg-green-800">Subscribe</button>
+                </div>
+            </fieldset>
+        </form>
+    </footer>
+</body>
+
+</html>

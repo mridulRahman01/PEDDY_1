@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peddy - Pet Grooming</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="max-w-[1340px] mx-auto px-5">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-bold">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="food.html">Pet Food</a></li>
+                            <li><a href="grooming.html" class="text-green-600">Grooming</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <a href="index.html" class="btn btn-ghost text-xl"><img src="./assests/logo.webp"
+                            alt="Peddy" />Peddy</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-bold">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="food.html">Pet Food</a></li>
+                        <li><a href="grooming.html" class="text-green-600">Grooming</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class=""><img class="w-[56px] h-[56px]" src="./assests/user.png" alt="User" /></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-[1340px] mx-auto px-5 py-10">
+
+        <!-- Grooming Guide Section -->
+        <section class="bg-green-50 rounded-2xl p-8 mb-12 shadow-sm border border-green-100">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <h1 class="text-4xl font-bold mb-4 text-green-900">How to Groom Your Pet at Home</h1>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Regular grooming is essential for your pet's health and happiness. A good brushing session not
+                        only removes dirt, dandruff, and dead hair, but also stimulates natural oils to distribute
+                        across the fur, giving it a healthy sheen.
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li><strong>Brushing:</strong> Use a slicker brush or bristle brush depending on the coat type.
+                            Brush gently in the direction of hair growth.</li>
+                        <li><strong>Bathing:</strong> Use pet-specific shampoo. Human shampoo can disrupt their skin's
+                            pH balance!</li>
+                        <li><strong>Nail Clipping:</strong> Clip nails regularly to prevent joint pain. Be careful not
+                            to cut the "quick" (the pink part containing blood vessels).</li>
+                        <li><strong>Ear Cleaning:</strong> Use cotton balls (never Q-tips) and an ear cleaner designed
+                            for pets.</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=800"
+                        alt="Pet Grooming Guide" class="rounded-xl shadow-lg w-full h-80 object-cover" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Grooming Products Section -->
+        <section>
+            <h2 class="text-3xl font-bold mb-8 text-center">Essential Grooming Products by Pet</h2>
+
+            <!-- Dogs -->
+            <div class="mb-12">
+                <h3 class="text-2xl border-l-4 border-green-500 pl-3 mb-6 font-semibold text-gray-800">For Dogs</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                    <!-- Product 1 -->
+                    <div class="card bg-base-100 shadow-xl border border-gray-100">
+                        <figure class="px-4 pt-4"><img
+                                src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=400"
+                                alt="Dog Brush" class="rounded-xl h-48 w-full object-cover" /></figure>
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title text-lg justify-center">Slicker Brush</h2>
+                            <p class="text-sm text-gray-500">Perfect for detangling</p>
+                            <div class="card-actions justify-center mt-2"><button
+                                    class="btn btn-sm btn-outline btn-success w-full">Buy ($12.99)</button></div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="card bg-base-100 shadow-xl border border-gray-100">
+                        <figure class="px-4 pt-4"><img
+                                src="https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?auto=format&fit=crop&q=80&w=400"
+                                alt="Dog Nail Clippers" class="rounded-xl h-48 w-full object-cover" /></figure>
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title text-lg justify-center">Nail Clippers</h2>
+                            <p class="text-sm text-gray-500">Safe guard included</p>
+                            <div class="card-actions justify-center mt-2"><button
+                                    class="btn btn-sm btn-outline btn-success w-full">Buy ($9.50)</button></div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="card bg-base-100 shadow-xl border border-gray-100">
+                        <figure class="px-4 pt-4"><img
+                                src="https://images.unsplash.com/photo-1583337260546-28b6bf66d004?auto=format&fit=crop&q=80&w=400"
+                                alt="Dog Shampoo" class="rounded-xl h-48 w-full object-cover" /></figure>
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title text-lg justify-center">Oatmeal Shampoo</h2>
+                            <p class="text-sm text-gray-500">Soothing for dry skin</p>
+                            <div class="card-actions justify-center mt-2"><button
+                                    class="btn btn-sm btn-outline btn-success w-full">Buy ($15.00)</button></div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="card bg-base-100 shadow-xl border border-gray-100">
+                        <figure class="px-4 pt-4"><img
+                                src="https://images.unsplash.com/photo-1623366302587-bcaaf853c84d?auto=format&fit=crop&q=80&w=400"
+                                alt="Dog Towel" class="rounded-xl h-48 w-full object-cover" /></figure>
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title text-lg justify-center">Microfiber Towel</h2>
+                            <p class="text-sm text-gray-500">Ultra absorbent</p>
+                            <div class="card-actions justify-center mt-2"><button
+                                    class="btn btn-sm btn-outline btn-success w-full">Buy ($14.99)</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cats -->
+            <div class="mb-12">
+                <h3 class="text-2xl border-l-4 border-blue-500 pl-3 mb-6 font-semibold text-gray-800">For Cats</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                    <!-- Product 1 -->
+                    <div class="card bg-base-100 shadow-xl border border-gray-100">
+                        <figure class="px-4 pt-4"><img
+                                src="https://images.unsplash.com/photo-1548802673-38020fb23f14?auto=format&fit=crop&q=80&w=400"
+                                alt="Cat Brush" class="rounded-xl h-48 w-full object-cover" /></figure>
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title text-lg justify-center">Deshedding Tool</h2>
+                            <p class="text-sm text-gray-500">Reduces shedding by 90%</p>
+                            <div class="card-actions justify-center mt-2"><button
+                                    class="btn btn-sm btn-outline btn-success w-full">Buy ($22.00)</button></div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="card bg-base-100 shadow-xl border border-gray-100">
+                        <figure class="px-4 pt-4"><img
+                                src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=400"
+                                alt="Cat Wipes" class="rounded-xl h-48 w-full object-cover" /></figure>
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title text-lg justify-center">Grooming Wipes</h2>
+                            <p class="text-sm text-gray-500">For quick cleanups</p>
+                            <div class="card-actions justify-center mt-2"><button
+                                    class="btn btn-sm btn-outline btn-success w-full">Buy ($8.99)</button></div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="card bg-base-100 shadow-xl border border-gray-100">
+                        <figure class="px-4 pt-4"><img
+                                src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&q=80&w=400"
+                                alt="Cat Nail Clippers" class="rounded-xl h-48 w-full object-cover" /></figure>
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title text-lg justify-center">Cat Nail Trimmer</h2>
+                            <p class="text-sm text-gray-500">Scissor style for accuracy</p>
+                            <div class="card-actions justify-center mt-2"><button
+                                    class="btn btn-sm btn-outline btn-success w-full">Buy ($6.50)</button></div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="card bg-base-100 shadow-xl border border-gray-100">
+                        <figure class="px-4 pt-4"><img
+                                src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&q=80&w=400"
+                                alt="Cat Comb" class="rounded-xl h-48 w-full object-cover" /></figure>
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title text-lg justify-center">Flea Comb</h2>
+                            <p class="text-sm text-gray-500">Fine teeth for removal</p>
+                            <div class="card-actions justify-center mt-2"><button
+                                    class="btn btn-sm btn-outline btn-success w-full">Buy ($5.00)</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rabbits -->
+            <div class="mb-12">
+                <h3 class="text-2xl border-l-4 border-yellow-500 pl-3 mb-6 font-semibold text-gray-800">For Rabbits</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="card bg-base-100 shadow-xl border border-gray-100">
+                        <figure class="px-4 pt-4"><img
+                                src="https://images.unsplash.com/photo-1585110396000-c9f0e2003b57?auto=format&fit=crop&q=80&w=400"
+                                alt="Rabbit Comb" class="rounded-xl h-48 w-full object-cover" /></figure>
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title text-lg justify-center">Soft Bristle Comb</h2>
+                            <p class="text-sm text-gray-500">Gentle on fragile skin</p><button
+                                class="btn btn-sm btn-outline btn-success w-full mt-2">Buy ($10.50)</button>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-xl border border-gray-100">
+                        <figure class="px-4 pt-4"><img
+                                src="https://images.unsplash.com/photo-1518796745738-410d10d65b1c?auto=format&fit=crop&q=80&w=400"
+                                alt="Rabbit Clippers" class="rounded-xl h-48 w-full object-cover" /></figure>
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title text-lg justify-center">Small Nail Clippers</h2>
+                            <p class="text-sm text-gray-500">Precise for small paws</p><button
+                                class="btn btn-sm btn-outline btn-success w-full mt-2">Buy ($8.00)</button>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-xl border border-gray-100">
+                        <figure class="px-4 pt-4"><img
+                                src="https://images.unsplash.com/photo-1584288019310-72bd550604b1?auto=format&fit=crop&q=80&w=400"
+                                alt="Rabbit Wipes" class="rounded-xl h-48 w-full object-cover" /></figure>
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title text-lg justify-center">Unscented Wipes</h2>
+                            <p class="text-sm text-gray-500">Safe for small animals</p><button
+                                class="btn btn-sm btn-outline btn-success w-full mt-2">Buy ($7.99)</button>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-xl border border-gray-100">
+                        <figure class="px-4 pt-4"><img
+                                src="https://images.unsplash.com/photo-1425082661705-1834bfd08dca?auto=format&fit=crop&q=80&w=400"
+                                alt="Rabbit Mat" class="rounded-xl h-48 w-full object-cover" /></figure>
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title text-lg justify-center">Grooming Mat</h2>
+                            <p class="text-sm text-gray-500">Non-slip surface</p><button
+                                class="btn btn-sm btn-outline btn-success w-full mt-2">Buy ($15.00)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Birds -->
+            <div class="mb-12">
+                <h3 class="text-2xl border-l-4 border-red-500 pl-3 mb-6 font-semibold text-gray-800">For Birds</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="card bg-base-100 shadow-xl border border-gray-100">
+                        <figure class="px-4 pt-4"><img
+                                src="https://images.unsplash.com/photo-1522926193341-e9eb1b36bb86?auto=format&fit=crop&q=80&w=400"
+                                alt="Bird Bath" class="rounded-xl h-48 w-full object-cover" /></figure>
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title text-lg justify-center">Cage Bird Bath</h2>
+                            <p class="text-sm text-gray-500">Hooks onto most cages</p><button
+                                class="btn btn-sm btn-outline btn-success w-full mt-2">Buy ($14.99)</button>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-xl border border-gray-100">
+                        <figure class="px-4 pt-4"><img
+                                src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&q=80&w=400"
+                                alt="Bird Spray" class="rounded-xl h-48 w-full object-cover" /></figure>
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title text-lg justify-center">Misting Bottle</h2>
+                            <p class="text-sm text-gray-500">Fine spray mist</p><button
+                                class="btn btn-sm btn-outline btn-success w-full mt-2">Buy ($6.50)</button>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-xl border border-gray-100">
+                        <figure class="px-4 pt-4"><img
+                                src="https://images.unsplash.com/photo-1544568101-b219bbaddc26?auto=format&fit=crop&q=80&w=400"
+                                alt="Bird Perch" class="rounded-xl h-48 w-full object-cover" /></figure>
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title text-lg justify-center">Pumice Perch</h2>
+                            <p class="text-sm text-gray-500">Helps trim nails</p><button
+                                class="btn btn-sm btn-outline btn-success w-full mt-2">Buy ($11.00)</button>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-xl border border-gray-100">
+                        <figure class="px-4 pt-4"><img
+                                src="https://images.unsplash.com/photo-1620694726487-25e5babb2b09?auto=format&fit=crop&q=80&w=400"
+                                alt="Bird Trimmer" class="rounded-xl h-48 w-full object-cover" /></figure>
+                        <div class="card-body p-4 text-center">
+                            <h2 class="card-title text-lg justify-center">Beak/Nail File</h2>
+                            <p class="text-sm text-gray-500">Professional grade</p><button
+                                class="btn btn-sm btn-outline btn-success w-full mt-2">Buy ($9.99)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-neutral text-neutral-content p-10 mt-10">
+        <nav>
+            <a href="index.html" class="btn btn-ghost text-xl"><img src="./assests/logo.webp" alt="Peddy" />Peddy</a>
+            <a class="link link-hover">Location: av. Washington 165, NY CA 54003</a>
+            <a class="link link-hover">Phone: +31 85 964 47 25</a>
+            <a class="link link-hover">Email: info@yourdomain.com</a>
+            <a class="link link-hover">Openings hours: 9.00 AM - 5.00 PM</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Useful Links</h6>
+            <a href="index.html" class="link link-hover">Home</a>
+            <a href="shop.html" class="link link-hover">Shop</a>
+            <a href="food.html" class="link link-hover">Pet Food</a>
+            <a href="grooming.html" class="link link-hover">Grooming</a>
+            <a href="contact.html" class="link link-hover">Contact</a>
+        </nav>
+        <form onsubmit="event.preventDefault(); alert('Subscribed!')">
+            <h6 class="footer-title">Drop a Message</h6>
+            <fieldset class="form-control w-full max-w-xs mt-4">
+                <div class="join">
+                    <input type="text" placeholder="username@site.com" class="input input-bordered join-item w-full" />
+                    <button class="btn bg-green-700 text-white join-item hover:bg-green-800">Subscribe</button>
+                </div>
+            </fieldset>
+        </form>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-outfit), var(--font-quicksand), sans-serif;
+  --font-heading: var(--font-outfit), sans-serif;
+  
+  --color-primary: #f43f5e; /* Vibrant Rose / Pink */
+  --color-primary-dark: #e11d48;
+  --color-secondary: #3b82f6; /* Electric Blue */
+  --color-secondary-dark: #2563eb;
+  
+  --color-brand-purple: #4f46e5;
+  --color-brand-yellow: #fcd34d;
+  --color-brand-orange: #fb923c;
+  
+  --color-bg-subtle: #f8fafc;
+  --color-text-main: #1e293b;
+  --color-text-muted: #64748b;
+}
+
+@layer base {
+  body {
+    @apply text-slate-800 bg-gray-50 selection:bg-rose-200 selection:text-rose-900;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20;
+  }
+  
+  .mega-menu-shadow {
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0,0,0,0.02);
+  }
+  
+  .hero-gradient {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #f43f5e 100%);
+  }
+}
+
+/* Custom interactive hover bounce for dropdown components */
+.hover-lift {
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
