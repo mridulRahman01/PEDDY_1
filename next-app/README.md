@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🐾 Peddy  
+**Your Premium Pet Companion Platform**
 
-## Getting Started
+Peddy is a beautifully designed, full-stack Next.js web application dedicated to giving pet owners the absolute best shopping and adoption experience. Whether you're looking for premium food, grooming services, or the perfect pet accessory, Peddy has it all in one immersive interface.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Blazing Fast Performance**: Built on Next.js 14+ (App Router) for an incredibly snappy, SEO-optimized experience.
+- **Vibrant & Modern UI**: Tailored with Tailwind CSS v4, utilizing custom fonts (Outfit & Quicksand) to deliver a friendly, premium aesthetic.
+- **Interactive Global Cart**: Powered by the React Context API and Framer Motion, enabling a buttery-smooth slide-out checkout experience that dynamically updates globally.
+- **Advanced Authentication Flow**: 
+  - Full-stack JWT implementation with `jose` and `bcryptjs`.
+  - Next.js Edge Middleware for unbreakable route protection.
+  - HttpOnly Cookie management resisting client-side tampering.
+- **Responsive by Design**: Hand-crafted CSS grid and flexbox logic specifically ensuring the layout morphs flawlessly from 320px mobile screens to 4K desktop environments without a single horizontal scrollbar.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Framework:** Next.js 14 (App Router)
+* **Styling:** Tailwind CSS (v4)
+* **State Management:** React Context API
+* **Animations:** Framer Motion
+* **Icons:** Lucide-React
+* **Authentication:** Next.js Route Handlers + JWT Edge Middleware + BcryptJS
 
-## Learn More
+## 🚀 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+To run this application locally, you just need Node.js installed.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/mridulRahman01/PEDDY_1.git
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Navigate to the application subdirectory**
+   ```bash
+   cd next-app
+   ```
 
-## Deploy on Vercel
+3. **Install the dependencies**
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+5. **View the live app**
+   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## 📦 Deployment on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new).
+
+Since this repository is already built around Next.js, Vercel will instantly recognize the configuration. Simply connect this GitHub repository on the Vercel dashboard, make sure the root directory is set to `next-app`, and click **Deploy**. Vercel will automatically configure the serverless Edge authentication routes and construct the global CDN.
