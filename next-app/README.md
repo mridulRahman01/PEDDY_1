@@ -1,6 +1,8 @@
 # 🐾 Peddy  
 **Your Premium Pet Companion Platform**
 
+**🚀 Live Demo:** [https://peddy-1-htn9.vercel.app/](https://peddy-1-htn9.vercel.app/)
+
 Peddy is a beautifully designed, full-stack Next.js web application dedicated to giving pet owners the absolute best shopping and adoption experience. Whether you're looking for premium food, grooming services, or the perfect pet accessory, Peddy has it all in one immersive interface.
 
 ---
